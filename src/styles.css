@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+	background: linear-gradient(-90deg,  #3EBCCC, #29A4BA, #178CA4, #0D4F6E, #072A40);
+	background-size: 400% 400%;
+	animation: gradient 10s ease-in infinite;
+	height: 300vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

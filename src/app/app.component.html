@@ -8,56 +8,182 @@
 </head>
 
 <body>
-    <div class="container">
-    <div class="row">
-        <div class="card col6">
-            <p-card class="divcard" header="Alejandro Rojas" subheader="Profesional en Ingenieria de Sistemas">
-                <ng-template pTemplate="header">
-                    <img class="foto" alt="Alejandro" src="https://avatars.githubusercontent.com/u/133620451?v=4" />
-                </ng-template>
-                <p>Egresado de Ingeniería Informática en la Universidad Gerardo Barrios.</p>
+    <div class="card menu">
+        <p-menubar [model]="items">
+            <ng-template pTemplate="start">
+                <img src="https://cdn-icons-png.flaticon.com/512/417/417213.png" height="40" class="mr-2" />
+            </ng-template>
+        </p-menubar>
+    </div>
 
+    <div class="container-fluid">
+        <div class="row-1">
+            <div class="col-12 div-edit">
+                <div class="a">
+                    a
+                </div>
+                <div class="b">
+                    <p-card class="cards">
+                        <h2 class="textcard">Alejandro Rojas</h2>
+                        <h3 class="textcard">Profesional en Ingenieria de Sistemas</h3>
+                        <ng-template pTemplate="header">
+                            <br><br><br>
+                            <img class="foto" src="https://avatars.githubusercontent.com/u/133620451?v=4" />
+                            <br>
+                        </ng-template>
+                        <p>Impulsando la innovación desde El Salvador: Ingeniería en Sistemas Computacionales para
+                            transformar ideas en soluciones tecnológicas poderosas.</p>
+                        <br><br>
 
+                        <!--<ol type=”A”>
+                        <li>Conocimientos en análisis, diseño y desarrollo web.</li>
+                        <li>Presento aptitudes de liderazgo y trabajo en equipo.</li>
+                        <li>Administración de bases de datos y gestión de la información.</li>
+                        <li>Poseo conocimientos en servicios relacionados a tecnologías de la información.</li>
+                        <li>Desarrollo de soluciones tecnológicas con metodologías ágiles y tradicionales.</li>
+                    </ol>-->
 
-                <p>Poseo conocimientos en servicios relacionados a tecnologías de la información.
-                    <br>Presento aptitudes de liderazgo y trabajo en equipo.
-                    <br>Conocimientos en análisis, diseño y desarrollo web.
-                    <br>Administración de bases de datos y gestión de la información.
-                    <br>Desarrollo de soluciones tecnológicas con metodologías ágiles y tradicionales.
-                </p>
-
-                <ng-template pTemplate="footer">
-                    <p-button label="CV" icon="pi pi-download"></p-button>
-                    <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary"
-                        [style]="{ 'margin-left': '.5em' }"></p-button>
-                </ng-template>
-            </p-card>
+                        <ng-template pTemplate="footer">
+                            <p-button label="CONTACTAME" icon="pi pi-angle-right" iconPos="right"
+                                styleClass="p-button-secondary"></p-button>
+                            <p-button label="MIS SERVICIOS" icon="pi pi-angle-right" [style]="{ 'margin-left': '.5em' }"
+                                iconPos="right"></p-button>
+                        </ng-template>
+                    </p-card>
+                </div>
+                <div class="c">
+                    c
+                </div>
+            </div>
         </div>
-        <div class="card col6">
-            <p-card class="divcard" header="Alejandro Rojas" subheader="Profesional en Ingenieria de Sistemas">
-                <ng-template pTemplate="header">
-                    <img class="foto" alt="Alejandro" src="https://avatars.githubusercontent.com/u/133620451?v=4" />
-                </ng-template>
-                <p>Egresado de Ingeniería Informática en la Universidad Gerardo Barrios.</p>
+        <div class="row-2">
+            <div class="col-12 div-edit">
+                <div class="a">
+                    a
+                </div>
+                <div class="b">
+                    <p-card class="cards">
+                        <h2 class="textcard">Explora mi mundo digital</h2>
+                        <h3 class="textcard">Soy un apasionado del diseño gráfico, y me encanta explorar el mundo de la
+                            creación web.</h3>
+                        <ng-template pTemplate="header">
+                            <br><br><br>
+                            <img class="foto"
+                                src="https://s3.amazonaws.com/www-inside-design/uploads/2019/03/featureuserpersona-810x810.jpg" />
+                            <br>
+                        </ng-template>
+                        <p>Disfruto brindar ayuda y aprender nuevas metodologías de trabajo para ayudar a otros de
+                            manera más efectiva.</p>
+                        <br><br>
 
+                        <!--<ol type=”A”>
+                            <li>Conocimientos en análisis, diseño y desarrollo web.</li>
+                            <li>Presento aptitudes de liderazgo y trabajo en equipo.</li>
+                            <li>Administración de bases de datos y gestión de la información.</li>
+                            <li>Poseo conocimientos en servicios relacionados a tecnologías de la información.</li>
+                            <li>Desarrollo de soluciones tecnológicas con metodologías ágiles y tradicionales.</li>
+                        </ol>-->
 
+                        <ng-template pTemplate="footer">
+                            <p-button label="CONTACTAME" icon="pi pi-angle-right" iconPos="right"
+                                styleClass="p-button-secondary"></p-button>
+                            <p-button label="CONOCE MAS" icon="pi pi-angle-right" [style]="{ 'margin-left': '.5em' }"
+                                iconPos="right"></p-button>
+                        </ng-template>
+                    </p-card>
+                </div>
+                <div class="c">
+                    c
+                </div>
+            </div>
+        </div>
+        <div class="row-3">
 
-                <p>Poseo conocimientos en servicios relacionados a tecnologías de la información.
-                    <br>Presento aptitudes de liderazgo y trabajo en equipo.
-                    <br>Conocimientos en análisis, diseño y desarrollo web.
-                    <br>Administración de bases de datos y gestión de la información.
-                    <br>Desarrollo de soluciones tecnológicas con metodologías ágiles y tradicionales.
-                </p>
+            <!--   Tarjetas-->
+            <div class="title-cards1">
+                <h2>MIS SERVICIOS</h2>
+            </div>
+            <div class="container-card1">
 
-                <ng-template pTemplate="footer">
-                    <p-button label="CV" icon="pi pi-download"></p-button>
-                    <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary"
-                        [style]="{ 'margin-left': '.5em' }"></p-button>
-                </ng-template>
-            </p-card>
+                <div class="card1">
+                    <figure>
+                        <div class="caja caja2">
+                            <i class="pi pi-desktop" style="font-size: 3rem"></i>                        </div>
+                    </figure>
+                    <div class="contenido-card1">
+                        <h3>Desarrollo de software</h3>
+                        <p>Desarrollo de Software a la medida para resolver cualquier problema u optimizar procesos.</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <figure>
+                        <div class="caja caja2">
+                            <i class="pi pi-map-marker" style="font-size: 3rem"></i>
+                        </div>
+                    </figure>
+                    <div class="contenido-card1">
+                        <h3>Desarrollo Web</h3>
+                        <p>Desarrollo sistemas web profesionales y disponibles 24/7 desde cualquier parte del mundo.</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <figure>
+                        <div class="caja caja2">
+                            <i class="pi pi-mobile" style="font-size: 3rem"></i>
+                        </div>
+                    </figure>
+                    <div class="contenido-card1">
+                        <h3>Sitios Web</h3>
+                        <p>DesarCreo sitios web personales y corporativos, blogs, tiendas en linea y demás.</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <figure>
+                        <div class="caja caja2">
+                            <i class="pi pi-id-card" style="font-size: 3rem"></i>
+                        </div>
+                    </figure>
+                    <div class="contenido-card1">
+                        <h3>Desarrollo Web</h3>
+                        <p>Creamos tu página web utilizando las últimas tecnologías disponibles. Una Web adaptativa a tu
+                            móvil o Tablet y con un gestor de contenido fácil.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Fin   Tarjetas-->
+
         </div>
     </div>
-</div>
 </body>
 
 </html>
+
+
+
+<!--
+<div class="col6">
+    <p-card class="divcard" header="Alejandro Rojas" subheader="Profesional en Ingenieria de Sistemas">
+        <ng-template pTemplate="header">
+            <img class="foto" alt="Alejandro"
+                src="https://avatars.githubusercontent.com/u/133620451?v=4" />
+        </ng-template>
+        <p>Egresado de Ingeniería Informática en la Universidad Gerardo Barrios.</p>
+
+
+
+        <p>Poseo conocimientos en servicios relacionados a tecnologías de la información.
+            <br>Presento aptitudes de liderazgo y trabajo en equipo.
+            <br>Conocimientos en análisis, diseño y desarrollo web.
+            <br>Administración de bases de datos y gestión de la información.
+            <br>Desarrollo de soluciones tecnológicas con metodologías ágiles y tradicionales.
+        </p>
+
+        <ng-template pTemplate="footer">
+            <p-button label="CV" icon="pi pi-download"></p-button>
+            <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary"
+                [style]="{ 'margin-left': '.5em' }"></p-button>
+        </ng-template>
+    </p-card>
+</div>
+</div>
+-->
