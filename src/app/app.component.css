@@ -2,50 +2,57 @@
     position: relative;
     font: gilroy;
     background-color: red;
+	overflow: hidden;
 }
 
 .row-1{
     min-height: 95vh;
-
+	
 }
 .row-2{
     min-height: 95vh;
-
 }
 .row-3{
-    min-height: 95vh;
+    min-height: 50vh;
+}
+.row-4 {
+	min-height: 40vh;
+	background-color: rgba(0, 0, 0, 0.158);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-left: -15px;
+	padding-right: -15px;
+	margin-left: -15px;
+	margin-right: -15px;
+}
 
+.row-5 {
+	min-height: 50vh;
+background-color: #2f46cc00;
+}
+.row-6 {
+	min-height: 100vh;
+background-color: #2f46cc00;
 }
 
 .div-edit{
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: 1;
 }
-
-.a{
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
-
-}
-
 
 .b{
-    display: flex;
-  justify-content: center;
-  align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 90vh;
+text-align: center;
 
 }
 
-.c{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 .cards{
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.925);
+	width: 800px;
 }
 
 .foto {
@@ -53,7 +60,7 @@ grid-template-columns: repeat(3, 1fr);
     margin: 0px auto;
     border-radius: 100%;
     border: 6px solid #3B82F6;
-    width: 300px;
+    width: 400px;
     
 }
 
@@ -71,6 +78,8 @@ ol {
 	display: flex;
 	max-width: 1200px;
 	margin: auto;
+	font-family:Arial, Helvetica, sans-serif;
+
 }
 .title-cards1{
 	width: 100%;
@@ -106,10 +115,9 @@ ol {
 	color: #000000;
 }
 .card1 .contenido-card1 p{
-	line-height: 1.8;
+	line-height: 1.5;
 	color: #000000;
-	font-size: 18px;
-	margin-bottom: 5px;
+	font-size: 20px;
 }
 .card1 .contenido-card1 a{
 	display: inline-block;
@@ -120,7 +128,6 @@ ol {
 	border: 1px solid #2f54cc;
 	border-radius: 4px;
 	transition: all 400ms ease;
-	margin-bottom: 5px;
 }
 .card1 .contenido-card1 a:hover{
 	background: #2f59cc;
@@ -154,7 +161,7 @@ ol {
 	transition: 0.4s linear;
 	
   }
-  .caja2:hover{
+  .caja2:hover {
 	-webkit-transform: rotate(360deg);
 	transform: rotate(360deg);
   }
