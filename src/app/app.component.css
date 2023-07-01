@@ -45,43 +45,64 @@
 	min-height: 90vh;
 }
 
-.div-edit {
-	display: grid;
-	grid-template-columns: 1;
-}
-
-.b {
+/*TARJETA PRESENTATIVA INICIO*/
+.cardf {
+	width: 160vmin;
+	height: 70vmin;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 90vh;
-	text-align: center;
+	box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.507);
+	background-color: rgba(0, 0, 0, 0.158);
+	border-radius: 10px;
+  }
+  .cardf:hover{
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.603);
 
-}
+  }
 
-.cards {
-	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.925);
-	width: 800px;
-}
+  .cardf__img {
+	background-position: center;
+	width: 50%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+  }
 
-.foto {
-	display: block;
-	margin: 0px auto;
-	border-radius: 100%;
-	border: 6px solid #3B82F6;
-	width: 400px;
+  #img01 {
+	background-image: url("https://avatars.githubusercontent.com/u/133620451?v=4");
+  }
 
-}
+  .cardf__content {
+	padding: 10% 5%;
+	box-sizing: border-box;
+	width: 50%;
+	color: white;
+  }
 
-.textcard {
-	text-align: center;
-}
+  .cardf__content-theme {
+	font-weight: 900;
+	font-size: 1.7vmin; 
+  }
 
-ol {
-	list-style-type: circle;
-}
+  .cardf__content-header {
+	font-weight: 900;
+	font-size: 54px;
+	font-size: 7vmin;
+	text-transform: capitalize;
+	letter-spacing: 0.01em;
+	line-height: 0.91;
+	margin: 3vmin 0 3.5vmin;  
+  }
 
-/*Cards*/
+  .cardf__content-paragraph {
+	font-size: 1.6vmin;
+	line-height: 1.7;
+	font-weight: 300;
+	margin-bottom: 2.5vmin;
+  }
+  /*TARJETA PRESENTATIVA FINAL*/
+
+  /*TARJETAS DE SERVICIOS, RECOMENDACIONES Y  TECNOLOGIAS*/
 .container-card1 {
 	width: 100%;
 	display: flex;
@@ -160,6 +181,9 @@ ol {
 	}
 }
 
+  /*FIN TARJETAS DE SERVICIOS, RECOMENDACIONES Y  TECNOLOGIAS*/
+
+/*ICONO CON ANIMACION DENTRO DE TARJETA DE MIS SERVICIOS*/
 .caja {
 
 	border-radius: 100%;
@@ -175,7 +199,7 @@ ol {
 }
 
 .caja2 {
-	background-color: #0D4F6E;
+	background-color: #0d628a;
 	-webkit-transition: 1s linear;
 	transition: 0.4s linear;
 
@@ -186,9 +210,10 @@ ol {
 	transform: rotate(360deg);
 }
 
-/*Fin-Cards*/
+/* FIN ICONO CON ANIMACION DENTRO DE TARJETA DE MIS SERVICIOS*/
 
-/*FOOTER */
+
+/*INICIO DELFOOTER */
 
 .footer1 {
 	background-color: #0000004f;
@@ -284,59 +309,32 @@ ul li {
 	/* Quitar subrayado al pasar el mouse */
 }
 
+/*FIN DEL FOOTER*/
 
-
-
-
-
-
-
-
-.cardf {
-    width: 160vmin;
-    height: 70vmin;
-    display: flex;
-    box-shadow: 0 30px 40px -15px rgba(0,0,0,0.35);
-	background-color: rgba(0, 0, 0, 0.158);
+nav {
+	padding: 24px;
+	text-align: center;
+	font-family: Raleway;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   }
 
-  .cardf__img {
-    background-position: center;
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;  
+  #nav-1 {
+	background: #5175C0;
   }
 
-  #img01 {
-    background-image: url("https://avatars.githubusercontent.com/u/133620451?v=4");
+  .link-1 {
+	transition: 0.3s ease;
+	background: #5175C0;
+	color: #ffffff;
+	font-size: 20px;
+	text-decoration: none;
+	border-top: 4px solid #5175C0;
+	border-bottom: 4px solid #5175C0;
+	padding: 20px 0;
+	margin: 0 20px;
   }
-
-  .cardf__content {
-    padding: 10% 5%;
-    box-sizing: border-box;
-    width: 50%;
-	color: white;
-  }
-
-  .cardf__content-theme {
-    font-weight: 900;
-    font-size: 1.7vmin; 
-  }
-
-  .cardf__content-header {
-    font-weight: 900;
-    font-size: 54px;
-    font-size: 7vmin;
-    text-transform: capitalize;
-    letter-spacing: 0.01em;
-    line-height: 0.91;
-    margin: 3vmin 0 3.5vmin;  
-  }
-
-  .cardf__content-paragraph {
-    font-size: 1.6vmin;
-    line-height: 1.7;
-    font-weight: 300;
-    margin-bottom: 2.5vmin;
+  .link-1:hover {
+	border-top: 4px solid #ffffff;
+	border-bottom: 4px solid #ffffff;
+	padding: 6px 0; 
   }
