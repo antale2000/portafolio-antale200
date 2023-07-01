@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
 </head>
@@ -17,75 +18,46 @@
             </p-menubar>
         </div>
 
-        <div class="row-2">
-            <div class="col-12 div-edit">
-                <div class="b">
-                    <p-card class="cards">
-                        <h2 class="textcard">Alejandro Rojas</h2>
-                        <h3 class="textcard">Profesional en Ingenieria de Sistemas</h3>
-                        <ng-template pTemplate="header">
-                            <br><br><br>
-                            <img class="foto" src="https://avatars.githubusercontent.com/u/133620451?v=4" />
-                            <br>
-                        </ng-template>
-                        <p>Impulsando la innovacion desde El Salvador:</p>
-                        <p>Ingenieria en Sistemas Computacionales para transformar ideas en soluciones tecnologicas
-                            poderosas.</p>
+        <div class="row-1">
+            <div class="cardf">
+                <div id="img01" class="cardf__img"></div>
+                <div class="cardf__content">
+                    <p class="cardf__content-theme">Profesional en Ingenieria de Sistemas</p>
+                    <h2 class="cardf__content-header">Alejandro Rojas</h2>
+                    <p class="cardf__content-paragraph">Impulsando la innovacion desde El Salvador:</p>
+                    <p class="cardf__content-paragraph">Ingenieria en Sistemas Computacionales para transformar ideas en
+                        soluciones tecnologicas poderosas.</p>
 
-                        <br><br>
+                    <div class="card flex justify-content-center flex-wrap gap-3 align-items-center">
+                        <p-button label="MIS SERVICIOS" icon="pi pi-check" styleClass="p-button-lg"></p-button>
+                        <p-button label="CONTACTAME" icon="pi pi-check" styleClass="p-button-lg"></p-button>
+                    </div>
 
-                        <!--<ol type=”A”>
-                            <li>Conocimientos en análisis, diseño y desarrollo web.</li>
-                            <li>Presento aptitudes de liderazgo y trabajo en equipo.</li>
-                            <li>Administración de bases de datos y gestión de la información.</li>
-                            <li>Poseo conocimientos en servicios relacionados a tecnologías de la información.</li>
-                            <li>Desarrollo de soluciones tecnológicas con metodologías ágiles y tradicionales.</li>
-                        </ol>-->
-
-                        <ng-template pTemplate="footer">
-                            <p-button label="CONTACTAME" icon="pi pi-angle-right" iconPos="right"
-                                styleClass="p-button-secondary"></p-button>
-                            <p-button label="MIS SERVICIOS" icon="pi pi-angle-right" [style]="{ 'margin-left': '.5em' }"
-                                iconPos="right"></p-button>
-                        </ng-template>
-                    </p-card>
                 </div>
             </div>
         </div>
         <div class="row-2">
-            <div class="col-12 div-edit">
-                <div class="b">
-                    <p-card class="cards">
-                        <h2 class="textcard">Explora mi mundo digital</h2>
-                        <h3 class="textcard">Soy un apasionado del diseño gráfico, y me encanta explorar el mundo de la
-                            creación web.</h3>
-                        <ng-template pTemplate="header">
-                            <br><br><br>
-                            <img class="foto" src="https://avatars.githubusercontent.com/u/133620451?v=4" />
-                            <br>
-                        </ng-template>
-                        <p>Disfruto brindar ayuda y aprender nuevas metodologías de trabajo para ayudar a otros de
-                            manera más efectiva.</p>
-                        <br><br>
+            <div class="cardf">
+                <div class="cardf__content">
+                    <h2 class="cardf__content-header">Explora mi mundo digital</h2>
+                    <p class="cardf__content-theme">Soy un apasionado del diseño gráfico, y me encanta explorar el mundo
+                        de la
+                        creación web.</p>
+                    <p class="cardf__content-paragraph">Disfruto brindar ayuda y aprender nuevas metodologías de trabajo
+                        para ayudar a otros de
+                        manera más efectiva.</p>
 
-                        <!--<ol type=”A”>
-                            <li>Conocimientos en análisis, diseño y desarrollo web.</li>
-                            <li>Presento aptitudes de liderazgo y trabajo en equipo.</li>
-                            <li>Administración de bases de datos y gestión de la información.</li>
-                            <li>Poseo conocimientos en servicios relacionados a tecnologías de la información.</li>
-                            <li>Desarrollo de soluciones tecnológicas con metodologías ágiles y tradicionales.</li>
-                        </ol>-->
+                    <div class="card flex justify-content-center flex-wrap gap-3 align-items-center">
+                        <p-button label="MIS SERVICIOS" icon="pi pi-check" styleClass="p-button-lg"></p-button>
+                        <p-button label="CONTACTAME" icon="pi pi-check" styleClass="p-button-lg"></p-button>
+                    </div>
 
-                        <ng-template pTemplate="footer">
-                            <p-button label="CONTACTAME" icon="pi pi-angle-right" iconPos="right"
-                                styleClass="p-button-secondary"></p-button>
-                            <p-button label="CONOCE MAS" icon="pi pi-angle-right" [style]="{ 'margin-left': '.5em' }"
-                                iconPos="right"></p-button>
-                        </ng-template>
-                    </p-card>
                 </div>
+                <div id="img01" class="cardf__img"></div>
             </div>
         </div>
+
+
         <div class="row-3">
 
             <!--   Tarjetas-->
@@ -140,161 +112,223 @@
                     </div>
                 </div>
             </div>
-            <!--Fin   Tarjetas-->
+        </div>
+        <!--Fin   Tarjetas-->
 
-            <div class="row-4">
-                <br><br>
-
-
-
-                <h1 style="text-align: center; font-size: 40px; color: white;">¿Tienes alguna idea en mente?</h1>
-
-                <h4 style="text-align: center; font-size: 25px; color: white;">Contáctame para platicar sobre el
-                    proyecto y con gusto puedo realizar una cotización según tus requerimientos.</h4>
-                <br><br>
-                <div class="card flex justify-content-center flex-wrap gap-3 align-items-center">
-                    <p-button label="MIS SERVICIOS" icon="pi pi-check" styleClass="p-button-lg"></p-button>
-                    <p-button label="CONTACTAME" icon="pi pi-check" styleClass="p-button-lg"></p-button>
-                </div>
+        <div class="row-4">
+            <br><br>
 
 
-            </div>
-            <div class="row-5">
-                <h1 style="text-align: center; font-size: 40px; color: white;">RECOMENDACIONES</h1>
 
+            <h1 style="text-align: center; font-size: 40px; color: white;">¿Tienes alguna idea en mente?</h1>
 
-                <!--   Tarjetas-->
-
-                <div class="container-card1">
-
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <p>Text</p>
-                            <br>
-                            <h3 style="text-align:right;">subject</h3>
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <p>Text</p>
-                            <br>
-                            <h3 style="text-align:right;">subject</h3>
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <p>Text</p>
-                            <br>
-                            <h3 style="text-align:right;">subject</h3>
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <p>Text</p>
-                            <br>
-                            <h3 style="text-align:right;">subject</h3>
-                        </div>
-                    </div>
-                </div>
-                <!--Fin   Tarjetas-->
-
-            </div>
-
-            <div class="row-6">
-                <h1 style="text-align: center; font-size: 40px; color: white;">TECNOLOGIAS</h1>
-
-
-                <!--   Tarjetas-->
-
-                <div class="container-card1">
-
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <img style="width: 200px;" class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" />
-
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <img style="width: 200px;" class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" />
-
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <img style="width: 200px;" class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" />
-
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <img style="width: 200px;" class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" />
-
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="container-card1">
-
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <img style="width: 200px;" class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" />
-
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <img style="width: 200px;" class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" />
-
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <img style="width: 200px;" class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" />
-
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <img style="width: 200px;" class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" />
-
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="container-card1">
-
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <img style="width: 200px;" class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" />
-
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <img style="width: 200px;" class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" />
-
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <img style="width: 200px;" class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" />
-
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <div class="contenido-card1">
-                            <img style="width: 200px;" class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" />
-
-                        </div>
-                    </div>
-                    
-                </div>
-                <!--Fin   Tarjetas-->
-
+            <h4 style="text-align: center; font-size: 25px; color: white;">Contáctame para platicar sobre el
+                proyecto y con gusto puedo realizar una cotización según tus requerimientos.</h4>
+            <br><br>
+            <div class="card flex justify-content-center flex-wrap gap-3 align-items-center">
+                <p-button label="MIS SERVICIOS" icon="pi pi-check" styleClass="p-button-lg"></p-button>
+                <p-button label="CONTACTAME" icon="pi pi-check" styleClass="p-button-lg"></p-button>
             </div>
         </div>
+
+        <div class="row-5">
+            <h1 style="text-align: center; font-size: 40px; color: white;">RECOMENDACIONES</h1>
+
+
+            <!--   Tarjetas-->
+
+            <div class="container-card1">
+
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <p>Text</p>
+                        <br>
+                        <h3 style="text-align:right;">-Edwin Joya</h3>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <p>Text</p>
+                        <br>
+                        <h3 style="text-align:right;">-Franklin Amaya</h3>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <p>Text</p>
+                        <br>
+                        <h3 style="text-align:right;">Rosa Ruiz</h3>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <p>Text</p>
+                        <br>
+                        <h3 style="text-align:right;">subject</h3>
+                    </div>
+                </div>
+            </div>
+            <!--Fin   Tarjetas-->
+
+        </div>
+
+        <div class="row-6">
+            <h1 style="text-align: center; font-size: 40px; color: white;">TECNOLOGIAS</h1>
+
+
+            <!--   Tarjetas-->
+
+            <div class="container-card1">
+
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <img style="width: 200px; height: 225px;" class=""
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" />
+
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <img style="width: 200px; height: 225px;" class=""
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" />
+
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <img style="width: 200px; height: 225px;" class=""
+                            src="https://logosdownload.com/logo/javascript-logo-big.png" />
+
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <img style="width: 200px; height: 225px;" class=""
+                            src="https://raw.githubusercontent.com/Mikescops/bootstrapbolttheme/master/icon-bootstrap.png" />
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-card1">
+
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <img style="width: 200px;" class="" src="https://www.satyamitsolution.com/img/ico/C_.png" />
+
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <img style="width: 200px;" class=""
+                            src="https://www.albertoluebbert.com/blog/wp-content/uploads/2018/11/lenguaje-c.png" />
+
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <img style="width: 200px;" class=""
+                            src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" />
+
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <img style="width: 200px;" class=""
+                            src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" />
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-card1">
+
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <img style="width: 200px;" class=""
+                            src="https://ordba.net/assets/images/topic_image/mariadb-logo1.png" />
+
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <img style="width: 200px;" class=""
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" />
+
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <img style="width: 200px;" class="" src="" />
+
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="contenido-card1">
+                        <img style="width: 200px;" class="" src="" />
+
+                    </div>
+                </div>
+
+            </div>
+            <!--Fin   Tarjetas-->
+
+        </div>
     </div>
+
+    <footer class="footer1">
+        <div class="footer1-columns">
+            <div class="footer1-column">
+                <ul>
+                    <li>Desarrollo Web</li>
+                    <li>Creacion de Titios Web</li>
+                    <li>Desarrollo de Software</li>
+                    <li>Diseño Grafico</li>
+                </ul>
+            </div>
+            <div class="footer1-column">
+                <ul>
+                    <li>Conoce más sobre mí</li>
+                    <li>Conoce mis servicios</li>
+                    <li>Ver mis ultimos proyectos</li>
+                    <li>Enviarme un mensaje</li>
+                </ul>
+            </div>
+            <div class="footer1-column">
+                <ul>
+                    <li>----</li>
+                    <li>----</li>
+                    <li>----</li>
+                    <li>----</li>
+                </ul>
+            </div>
+            <div class="footer1-column">
+                <ul>
+                    <li>Correo Electronico:</li>
+                    <li>rojasalejandro987@gmail.com</li>
+                    <li>Ubicación:</li>
+                    <li>El Salvador, Usulután</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-content">
+        <div class="footer-text">
+            © Todos Los Derechos Reservados - Alejandro Rojas
+        </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/alejandro-rojas-007960248/" target="_blank"
+                class="social-link linkedin">
+                <div class="social-icon">
+                    <i class="fa fa-linkedin"></i>
+                </div>
+                <span class="hide-text">LinkedIn</span>
+            </a>
+        </div>
+    </div>
+
+
+
 </body>
 <script src="./js/app.component.js"></script>
 

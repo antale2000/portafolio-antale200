@@ -1,19 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 html {
-	background: linear-gradient(-90deg,  #3EBCCC, #29A4BA, #178CA4, #0D4F6E, #072A40);
-	background-size: 400% 400%;
-	animation: gradient 10s ease-in infinite;
-	height: 400vh;
+    background: linear-gradient(-90deg, #072A40, #041C30, #020F1D, #01090B, #020F1D, #041C30, #072A40, #0D4F6E, #178CA4, #29A4BA, #3EBCCC, #29A4BA, #178CA4, #0D4F6E, #072A40, #041C30, #020F1D, #01090B, #020F1D, #041C30, #072A40, #0D4F6E, #178CA4, #29A4BA, #3EBCCC, #29A4BA, #178CA4, #0D4F6E, #072A40, #041C30, #020F1D, #01090B);
+    background-size: 3200% 400%;
+    animation: gradient 60s linear infinite;
+    height: 450vh;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
