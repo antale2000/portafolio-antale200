@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -96,10 +96,30 @@ import { ConfirmationService } from 'primeng/api';
 
 
 import { AppComponent } from './app.component';
+import { MyComponent } from './my/my.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { SERVICIOSComponent } from './servicios/servicios.component';
+import { BLOGComponent } from './blog/blog.component';
+import { CONTACTOComponent } from './contacto/contacto.component';
+
+const routes: Routes = [
+    { path: '', redirectTo: '/INICIO', pathMatch: 'full' }, // Ruta por defecto
+    { path: 'INICIO', component: InicioComponent }, // Ruta para la página de inicio
+    { path: 'my', component: MyComponent }, // Ruta para el componente "my"
+    { path: 'SERVICIOS', component: SERVICIOSComponent }, // Ruta para el componente "my"
+    { path: 'BLOG', component: BLOGComponent }, // Ruta para el componente "my"
+    { path: 'CONTACTO', component: CONTACTOComponent }, // Ruta para el componente "my"
+    // Agrega aquí más rutas según tus necesidades
+  ];
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        InicioComponent,
+        MyComponent,
+        SERVICIOSComponent,
+        BLOGComponent,
+        CONTACTOComponent
     ],
     imports: [
         AvatarModule,
@@ -163,6 +183,7 @@ import { AppComponent } from './app.component';
         ProgressBarModule,
         RadioButtonModule,
         RatingModule,
+        RouterModule.forRoot(routes, { useHash: false }),
         SelectButtonModule,
         SidebarModule,
         ScrollerModule,
@@ -195,7 +216,9 @@ import { AppComponent } from './app.component';
         CardModule,
     ],
     providers: [ConfirmationService],
-    bootstrap: [AppComponent]
-
+    bootstrap: [AppComponent],
+    exports: [RouterModule]
+    
 })
 export class AppModule { }
+export class AppRoutingModule { }
