@@ -315,23 +315,29 @@ nav {
 	padding: 24px;
 	text-align: center;
 	font-family: Raleway;
-	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+	box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.507);
+
+  }
+  nav:hover{
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.507);
+
   }
 
   #nav-1 {
-	background: #5175C0;
-  }
+	background-color: rgba(0, 0, 0, 0.158);  }
+	
 
   .link-1 {
 	transition: 0.3s ease;
-	background: #5175C0;
+	background: #5174c000;
 	color: #ffffff;
 	font-size: 20px;
 	text-decoration: none;
-	border-top: 4px solid #5175C0;
-	border-bottom: 4px solid #5175C0;
+	border-top: 4px solid #5174c000;
+	border-bottom: 4px solid #5174c000;
 	padding: 20px 0;
 	margin: 0 20px;
+	
   }
   .link-1:hover {
 	border-top: 4px solid #ffffff;
