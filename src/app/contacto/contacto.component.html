@@ -9,17 +9,34 @@
 </head>
 
 <body>
+
     <div class="container">
-        <div class="row-1">
-            <img src="https://escueladeposgrado.edu.pe/wp-content/uploads/2020/11/Importancia-de-los-Sistema-de-Informacion-en-una-empresa-scaled.jpg"
-                alt="">
-        </div>
-        <div class="row-2">
-            <div class="col">
-                <h1>Contacto</h1>
-                <p>Este es un párrafo de ejemplo para mostrar cómo se ve el texto con estilo.</p>
-            </div>
-        </div>
+        <img src="https://escueladeposgrado.edu.pe/wp-content/uploads/2020/11/Importancia-de-los-Sistema-de-Informacion-en-una-empresa-scaled.jpg"
+            alt="Imagen">
+        <div class="text">CONTACTO</div>
+    </div>
+
+
+    <div class="camp">
+        <p>Siempre es un placer saber de ti, agradezco te pongas en contacto conmigo.
+            Por favor sé descriptivo en tu mensaje y así tendremos una mejor comunicación.</p>
+
+
+
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/myyqywya" method="POST">
+                <fieldset id="fs-frm-inputs">
+                  <label for="full-name">NOMBRE: </label>
+                  <input type="text" name="name" id="full-name" placeholder="NOMBRE" required="">
+                  <label for="email-address">CORREO ELECTRONICO: </label>
+                  <input type="email" name="_replyto" id="email-address" placeholder="CORREO" required="">
+                  <label for="message">MENSAJE: </label>
+                  <textarea rows="5" name="message" id="message" placeholder="MENSAJE" required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="ENVIAR">
+              </form>
+
+
     </div>
 </body>
 

@@ -1,49 +1,66 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.container {
+	position: relative;
+	font: gilroy;
+	overflow: hidden;
+}
+
+.row-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 95vh;
+	text-align: center;
+}
+
+/*TARJETA PRESENTATIVA INICIO*/
+.cardf {
+	width: 160vmin;
+	height: 70vmin;
+	display: flex;
+	background-color: rgb(0, 0, 0);
+	border-radius: 10px;
   }
-  
-  .container {
-    position: relative;
-    font-family: gilroy; /* Corregido: font */
-    overflow: hidden;
+
+  .card__img {
+	background-position: center;
+	width: 50%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
   }
-  
-  .row-1 {
-    justify-content: center;
-    align-items: center;
-    min-height: 30vh; /* Corregido: 95vh */
-    text-align: center;
-    display: flex;
-    align-items: flex-start;
+
+  #img01 {
+	background-image: url("https://avatars.githubusercontent.com/u/133620451?v=4");
   }
-  .row-2{
-      justify-content: center;
-      align-items: center;
-      min-height: 40vh; /* Corregido: 95vh */
-      text-align: center;
-      display: flex;
-      align-items: flex-start;
-      background-color: white;
+
+  .card__content {
+	padding: 10% 5%;
+	box-sizing: border-box;
+	width: 50%;
+	color: rgb(0, 0, 0);
+  background-color: rgb(240, 239, 239);
   }
-  
-  img {
-      height: 30vh;
-      width: 100%;
-      object-fit: cover;
-      object-position: top;
+
+  .card__content-theme {
+	font-weight: 900;
+	font-size: 1.7vmin; 
   }
-  
-  h1 {
-    color: #333;
-    font-size: 48px;
-    margin-bottom: 10px;
+
+  .card__content-header {
+	font-weight: 900;
+	font-size: 54px;
+	font-size: 7vmin;
+	text-transform: capitalize;
+	letter-spacing: 0.01em;
+	line-height: 0.91;
+	margin: 3vmin 0 3.5vmin;  
   }
-  
-  p {
-    color: #666;
-    font-size: 20px;
-    line-height: 1.5;
+
+  .card__content-paragraph {
+	font-size: 1.6vmin;
+	line-height: 1.7;
+	font-weight: 300;
+	margin-bottom: 2.5vmin;
   }
-  
+  /*TARJETA PRESENTATIVA FINAL*/
