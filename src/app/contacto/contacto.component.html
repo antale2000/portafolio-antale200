@@ -23,21 +23,24 @@
 
 
 
-            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/myyqywya" method="POST">
-                <fieldset id="fs-frm-inputs">
-                  <label for="full-name">NOMBRE: </label>
-                  <input type="text" name="name" id="full-name" placeholder="NOMBRE" required="">
-                  <label for="email-address">CORREO ELECTRONICO: </label>
-                  <input type="email" name="_replyto" id="email-address" placeholder="CORREO" required="">
-                  <label for="message">MENSAJE: </label>
-                  <textarea rows="5" name="message" id="message" placeholder="MENSAJE" required=""></textarea>
-                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                </fieldset>
+            <form id="fs-frm" class="contenedor" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/myyqywya" method="POST">
+                <label for="full-name">NOMBRE:</label>
+                <input type="text" name="name" id="full-name" placeholder="NOMBRE" required="">
+              
+                <label for="email-address">CORREO ELECTRÓNICO:</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="CORREO" required="">
+              
+                <label for="message">MENSAJE:</label>
+                <textarea rows="5" name="message" id="message" placeholder="MENSAJE" required=""></textarea>
+              
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              
                 <input type="submit" value="ENVIAR">
               </form>
 
 
     </div>
+    
 </body>
 
 </html>
